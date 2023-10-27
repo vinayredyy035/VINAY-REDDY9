@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h1>Positive,negative or zero checker</h1>Enter a number to check if its positive,negative or zero:</p>
+
+    <input type="text" id="numberinput">
+
+    <button id="checkbutton">check</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        document.getElementById('checkbutton').addEventListener('click',function(){
+
+            var number=
+
+            parseFloat(document.getElementById('numberinput').value);
+
+            var resultelement=
+
+            document.getElementById('result');
+
+ 
+
+            if (isNaN(number)){
+
+                resultelement.textContent="please enter a valid number.";
+
+            }else if (number>0){
+
+                resultelement.textContent="the number is positive.";
+
+            }else if (number<0){
+
+                resultelement.textContent="the number is negative.";
+
+            }else{
+
+                resultelement.textContent="the number is zero.";
+
+            }
+
+        });
+
+           
+
+       
+
+    </script>
+
+</body>
+
+</html>
+
